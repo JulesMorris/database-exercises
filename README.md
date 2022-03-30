@@ -1,2 +1,2 @@
 # database-exercises
-MySQL exercises
+MySQL exercises for CodeUp
