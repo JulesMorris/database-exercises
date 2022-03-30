@@ -1,0 +1,2 @@
+# database-exercises
+MySQL exercises
