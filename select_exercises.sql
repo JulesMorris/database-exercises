@@ -53,6 +53,8 @@ WHERE sales < 20.0;
 
 -- f. All the albums with a genre of "Rock". Why do these query results not include albums with a genre of "Hard rock" or "Progressive rock"?
 	-- Sgt. Pepper's, 1, Abbey Road, Born in the USA, Supernatural
+    -- The query returned an explicit value of 'Rock' because I set the query to return that value.
+    
 SELECT name
 FROM albums
 WHERE genre = 'Rock';
