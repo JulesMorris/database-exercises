@@ -6,8 +6,8 @@ USE albums_db;
 SELECT COUNT(*)
 FROM albums;
 -- b. How many unique artist names are in the albums table?
-	-- 31
-SELECT DISTINCT COUNT(name)
+	-- 23
+SELECT COUNT(DISTINCT artist)
 FROM albums;
 -- c. What is the primary key for the albums table?
 	-- id 
