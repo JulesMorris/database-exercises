@@ -14,7 +14,11 @@ FROM albums;
 DESCRIBE albums;
 -- d. What is the oldest release date for any album in the albums table? What is the most recent release date?
 	-- 1967
+    -- 2011 
 SELECT MIN(release_date)
+FROM albums;
+
+SELECT MAX(release_date)
 FROM albums;
 
 -- a. The name of all albums by Pink Floyd
