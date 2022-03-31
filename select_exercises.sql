@@ -32,12 +32,19 @@ WHERE artist = 'Pink Floyd';
 	-- 1967
 SELECT release_date, name
 FROM albums;
+		-- Use double quotations when there is an apostraphe 
+
+SELECT release_date
+FROM albums
+WHERE name = "Sgt. Pepper's Lonely Hearts Club Band"; 
 
 -- c. The genre for the album Nevermind
 	-- Grunge, Alternative rock
+    
 SELECT genre
 FROM albums
 WHERE name = 'Nevermind';
+
 -- d. Which albums were released in the 1990s
 		-- The Bodyguard, Jagged Little Pill, 
 		-- Come on Over, Falling Into You, Let's Talk About Love,
@@ -62,3 +69,11 @@ WHERE sales < 20.0;
 SELECT name
 FROM albums
 WHERE genre = 'Rock';
+
+	-- Provides better, more accurate results for albums with multiple genres 
+SELECT name, genre
+FROM albums
+WHERE genre = 'Rock'
+	OR genre LIKE 'Rock, %'
+    OR genre LIKE '%, Rock, %'
+    OR genre LIKE '%, Rock';
